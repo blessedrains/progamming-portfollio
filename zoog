@@ -1,0 +1,38 @@
+void setup() {
+    size(500,900);
+    }
+    
+void draw() {
+    drawZoog(random(width), random(height));
+    //background(155,55, 150); 
+    //drawZoog(mouseX, mouseY);
+    //drawZoog(mouseX-100, mouseY-100);
+    //drawZoog(mouseX+100, mouseY+100);
+   
+}
+
+void drawZoog (int x, int y) {
+     ellipseMode(CENTER);
+    rectMode(CENTER);
+    
+    stroke(0); 
+    fill(random(255),random(255),random(255));
+    rect(x,y,20,100);
+    
+    stroke(0);
+    fill(random(255),random(255),random(255));
+    ellipse(x,y-60,60,60,60); 
+
+    
+    fill(random(255),random(255),random(255));
+    ellipse(x-15,y-60,16,32);
+    ellipse(x+15,y-60,16,32);
+    
+    fill(random(255),random(255),random(255));    
+    stroke(random(255),random(255),random(255));
+    line(x-11, y+49,x-25,y+60);
+    line(x+11, y+49,x+25,y+60);
+    
+    
+    }
+
